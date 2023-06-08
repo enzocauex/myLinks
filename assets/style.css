@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-color: #271A2D;
+    --card-color: #32283B;
+    --primary-text-color: #FBFBFB;
+    --secondary-text-color: #ABAAB0;
+}
+
+body {
+    font-size: 1.6srem;
+    font-family: 'Inter', sans-serif;
+
+    background-color: var(--bg-color);
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 39rem;
+}
+
+.page > span {
+    margin: 2.2rem 0;
+}
+
+#username {
+    display: block;
+    
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    text-align: center;
+    
+    color: var(--primary-text-color);
+    
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile span {
+    margin: 1.8rem 0 1.4rem;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+}
+
+ul.open {
+    display: flex;
+    opacity: 1;
+    flex-direction: column;
+    gap: 1.4rem;
+
+    margin: 2.2rem 0 3.4rem;
+}
+
+ul {
+    display: none;
+    opacity: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    list-style: none;
+    background-color: var(--bg-color);
+    width: 32.6rem;
+    height: 4.8rem;
+
+    border-radius: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+
+    color: var(--primary-text-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.2rem;
+
+    background-color: var(--card-color);
+    max-width: 37rem;
+    border-radius: 3.6rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.4rem 0 1rem;
+    
+    background-color: var(--bg-color);
+    color: var(--primary-text-color);
+
+    width: 32.6rem;
+    height: 4.8rem;
+
+    border: none;
+    border-radius: 5rem;
+
+    font-weight: 700;
+    font-size: 1.4;
+    line-height: 1.7;
+}
+
+svg {
+    margin-right: .8rem;
+}
+.card.about {
+    align-items: start;
+    padding: 2.6rem;
+}
+
+.card.about span {
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--primary-text-color);
+    text-align: right;
+    margin-bottom: 1.4rem;
+}
